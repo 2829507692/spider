@@ -11,3 +11,8 @@ docker 版本{
 
 docker image inspect afd6
  查看镜像详细信息
+
+docker 中 镜像，容器，网络等等都是对象，可使用docker命令进行增删改查
+ docker 网络管理
+ 容器中的网络，默认与宿主机，与其他容器时相互隔离的
+
