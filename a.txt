@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 safdasfq
 q
+=======
+q
+da：q
+>>>>>>> dev
 q
 q
 q
