@@ -1,0 +1,48 @@
+去重应用场景
+	1、防止发出重复请求
+	2、防止存储重复的数据
+
+去重实现的基本原理
+	判断依据（如何规定两个数据是相同数据）
+	去重容器 set()
+	
+
+class Test(object):
+	def __init__(self,V)
+	self.V=V
+
+
+t1=Test(100)
+t2=Test(100)
+t3=Test(1000)
+t4=t1
+
+data=[t1,t2,t3,t4]
+剔除重复数据
+set（data）
+
+剔除重复数据 判断依据为 test对象V相同，则为相同数据
+sign=[]
+datas=[]
+for da in data:
+	if da.v not in sign:
+		sign.append(da.v)
+		datas.append(da)
+		
+剔除重复数据 判断依据为 test对象类相同，则为相同数据
+sign=[]
+datas=[]
+for da in data:
+	if da.__class__ not in sign:
+		sign.append(da.__class__)
+		datas.append(da)
+	
+临时去重容器与持久化去重容器
+	临时去重容器 list set
+	持久化去重容器 redis mysql
+
+
+原始数据特征值
+	信息摘要算法（hash）
+	simhash （应用于模糊文本）
+	布隆过滤器

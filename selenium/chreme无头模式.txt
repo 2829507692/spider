@@ -1,0 +1,5 @@
+selenium 需使用webdrive，放置在pytho\script下
+chrome59以后可以变成无头的浏览器，须加入以下参数
+options=webdrive.chromeOptions()
+options.add_argument('--headless')
+chrome=webdrive.Chrome(chrome_options=options)
