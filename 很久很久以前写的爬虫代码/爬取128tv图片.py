@@ -40,6 +40,6 @@ def main(i):
     getjpg(sus)
     print('完成')
 if __name__ == '__main__':
-    with Pool(20) as p:
+    with Pool(4) as p:
         p.map(main, range(2, 20))
 
