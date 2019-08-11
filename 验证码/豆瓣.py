@@ -5,8 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from logeer import logger
-username='18573479912'
-password='f7345968'
+username='123432421'
+password='12341234214'
 url=r'https://www.douban.com/'
 chrome=webdriver.Chrome()
 chrome.get(url)

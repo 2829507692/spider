@@ -17,8 +17,8 @@ with open('yzm.jpg', 'wb')as f:
 time.sleep(2)
 yzm= input('请输入验证码>>>')
 peramas={
-    'username': 'love2c133',
-    'password': 'f5317355',
+    'username': '13414214',
+    'password': '1341424',
     'setcookie': '14',
     'checkCode': yzm,
     'next': '/',
