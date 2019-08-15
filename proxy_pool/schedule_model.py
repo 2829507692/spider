@@ -48,10 +48,10 @@ class Scheduler():
             tester_process=Process(target=self.schedule_tetser)
             tester_process.start()
         if GETER_ENABLED:
-            getter_process=Process(target=self.schedule_geter())
+            getter_process=Process(target=self.schedule_geter)
             getter_process.start()
         if API_ENABLED:
-            api_process=Process(target=self.schedule_tetser)
+            api_process=Process(target=self.schedule_api)
             api_process.start()
 
 if __name__ == '__main__':
