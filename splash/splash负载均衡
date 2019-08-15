@@ -1,0 +1,25 @@
+#
+splash 是一个javascript渲染服务，是一个带有httpapi的轻量级浏览器，可以进行动态页面的抓取
+
+##lua 格式化字符串
+js=string.format("document.querySelector('input.input-txt:nth-child(2)').value=%d;document.querySelector('a.btn.btn-default:nth-child(4)').click()",5)
+
+##splash 负载均衡
+
+http
+upstream splash{
+	least_conn ;##
+	server 127.0.0.1:8080;
+	server 127.0.0.1:8081;
+	server 127.0.0.1:8082;
+	}
+	
+	server{
+	listen 8050
+	location /{
+	proxy_pass http://splash
+	}
+	}
+
+
+
