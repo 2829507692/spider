@@ -1,0 +1,1 @@
+document.querySelector('.geetest_radar_tip').click()
